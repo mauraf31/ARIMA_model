@@ -18,5 +18,5 @@ appl_close = appl_data[,c(1,5)]
 
 library(TSA)
 library(astsa)
-tsplot(appl_close, main="Apple Stock", type="o", pch=19, ylab="")
+plot(y=appl_close$AAPL.Close,x = appl_close$Date, main="Apple Stock",grid())
 
