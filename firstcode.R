@@ -20,3 +20,6 @@ library(TSA)
 library(astsa)
 plot(y=appl_close$AAPL.Close,x = appl_close$Date, main="Apple Stock",grid())
 
+appl_ts = ts(data=appl_data$AAPL.Close,frequency=12)
+class(appl_ts)
+plot(appl_ts)
